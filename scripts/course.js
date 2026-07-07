@@ -1,16 +1,3 @@
-const currentYear = new Date().getFullYear();
-document.getElementById("currentyear").textContent = currentYear;
-
-document.getElementById("modificationDate").textContent = document.lastModified;
-
-const menuButton = document.getElementById("menu");
-const nav = document.querySelector("nav");
-
-menuButton.addEventListener("click", () => {
-  menuButton.classList.toggle("open");
-  nav.classList.toggle("open");
-});
-
 const courses = [
   {
     subject: "CSE",
