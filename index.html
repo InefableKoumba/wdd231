@@ -4,22 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta description="Web Frontend Development I">
-    <meta author="Inefable KOUMBA">
+    <meta name="description" content="Web Frontend Development I">
+    <meta name="author" content="Inefable KOUMBA">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 768px)">
 </head>
 
 <body>
 
     <header>
-        <h1>Web Frontend Development I</h1>
+        <img src="./images/logo.svg" width="60" alt="Logo">
+        <span>Inefable KOUMBA</span>
+        <button id="menu" aria-label="Menu"></button>
     </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="#">Chamber Project</a></li>
+            <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
     <main>
+        <h1>Home</h1>
+        <section>
+            <h2>About Me</h2>
+            <p>I am a passionate web developer with experience in creating responsive and user-friendly websites.</p>
+        </section>
+        <section>
+            <h2>Student Photo</h2>
+            <img src="./images/me.jpg" alt="Student Photo">
+        </section>
+        <section>
+            <h2>Web Certificate Courses</h2>
+            <div id="course-filters">
+                <button id="filter-all">All</button>
+                <button id="filter-cse">CSE</button>
+                <button id="filter-wdd">WDD</button>
+            </div>
+            <div id="course-list">
+            </div>
+            <span id="total-credits">The total credits for course listed above is 0</span>
 
+        </section>
     </main>
     <footer>
-        <p>Copyright &copy; 2026 | Inefable KOUMBA | Republic Of Congo</p>
+        <div>
+            <a target="_blank" href="https://github.com/InefableKoumba/wdd231">
+                <img src="./images/github.svg" alt="GitHub Logo">
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/in/inefablekoumba">
+                <img src="./images/linkedin.svg" alt="LinkedIn Logo">
+            </a>
+            <a target="_blank" href="https://www.facebook.com/InefableKoumba">
+                <img src="./images/facebook.svg" alt="Facebook Logo">
+            </a>
+        </div>
+        <p>Copyright &copy; <span id="currentyear"></span> | Inefable KOUMBA | Republic Of Congo</p>
+        <p id="lastModified">Last modification: <span id="modificationDate"></span></p>
     </footer>
+    <script src="scripts/main.js"></script>
 </body>
 
 </html>
