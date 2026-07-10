@@ -13,6 +13,7 @@
   nav {
     display: block !important; /* Override inline styles from JS */
     background-color: transparent;
+    position: static;
   }
 
   nav ul {
