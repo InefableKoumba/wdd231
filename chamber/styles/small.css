@@ -207,6 +207,10 @@ h2 {
   word-break: break-all;
 }
 
+#members-container.list .card-bottom img {
+  display: none;
+}
+
 footer {
   background-color: var(--footer-bg);
   text-align: center;
