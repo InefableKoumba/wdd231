@@ -25,20 +25,33 @@ document.addEventListener("DOMContentLoaded", () => {
       const card = document.createElement("section");
       card.classList.add("card");
 
-      const img = document.createElement("img");
-      img.src = `images/${member.image}`;
-      img.alt = `${member.name} Logo`;
-      img.loading = "lazy";
-      img.width = "150";
-      img.height = "auto";
+      // Top row container (name + tagline)
+      const topSection = document.createElement("div");
+      topSection.classList.add("card-top");
 
       const h3 = document.createElement("h3");
       h3.textContent = member.name;
 
       const pTagline = document.createElement("p");
       pTagline.textContent = member.additionalInfo;
-      pTagline.style.fontStyle = "italic";
-      pTagline.style.fontSize = "0.8rem";
+      pTagline.classList.add("tagline");
+
+      topSection.appendChild(h3);
+      topSection.appendChild(pTagline);
+
+      // Bottom row container (image + contact info)
+      const bottomSection = document.createElement("div");
+      bottomSection.classList.add("card-bottom");
+
+      const img = document.createElement("img");
+      img.src = `images/${member.image}`;
+      img.alt = `${member.name} Logo`;
+      img.loading = "lazy";
+      img.width = "100";
+      img.height = "100";
+
+      const infoSection = document.createElement("div");
+      infoSection.classList.add("card-info");
 
       const pEmail = document.createElement("p");
       pEmail.innerHTML = `<strong>EMAIL:</strong> info@${member.website.replace('https://', '')}`;
@@ -49,13 +62,16 @@ document.addEventListener("DOMContentLoaded", () => {
       const pURL = document.createElement("p");
       pURL.innerHTML = `<strong>URL:</strong> <a href="${member.website}" target="_blank">${member.website.replace('https://', '')}</a>`;
 
+      infoSection.appendChild(pEmail);
+      infoSection.appendChild(pPhone);
+      infoSection.appendChild(pURL);
+
+      bottomSection.appendChild(img);
+      bottomSection.appendChild(infoSection);
+
       // Build card
-      card.appendChild(h3);
-      card.appendChild(pTagline);
-      card.appendChild(img);
-      card.appendChild(pEmail);
-      card.appendChild(pPhone);
-      card.appendChild(pURL);
+      card.appendChild(topSection);
+      card.appendChild(bottomSection);
 
       membersContainer.appendChild(card);
     });

@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Timbuktu Chamber of Commerce Directory</title>
-    <meta name="description" content="Timbuktu Chamber of Commerce member directory and business listings.">
+    <title>Brazzaville Chamber of Commerce Directory</title>
+    <meta name="description" content="Brazzaville Chamber of Commerce member directory and business listings.">
     <meta name="author" content="Inefable KOUMBA">
 
     <!-- Favicon -->
@@ -14,21 +14,20 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://inefablekoumba.github.io/wdd231/chamber/directory.html">
-    <meta property="og:title" content="Timbuktu Chamber of Commerce Directory">
+    <meta property="og:title" content="Brazzaville Chamber of Commerce Directory">
     <meta property="og:description"
-        content="Discover local businesses and services in Timbuktu. Join our chamber today!">
+        content="Discover local businesses and services in Brazzaville. Join our chamber today!">
     <meta property="og:image" content="https://inefablekoumba.github.io/wdd231/chamber/images/logo.png">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/larger.css">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Roboto:wght@400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
 
     <!-- Scripts -->
     <script src="scripts/main.js" defer></script>
@@ -38,23 +37,25 @@
 <body>
     <header>
         <div class="logo-container">
-            <img src="images/logo.png" alt="Timbuktu Chamber Logo" width="60" height="60">
-            <h1>Timbuktu Chamber of Commerce</h1>
+            <img src="images/logo.png" alt="Brazzaville Chamber Logo" width="60" height="60">
+            <span class="site-title">Brazzaville Chamber<br>of Commerce</span>
         </div>
-        <button id="menu-btn" aria-label="Menu">☰</button>
+        <div class="header-actions">
+            <button id="dark-mode-btn" aria-label="Toggle Dark Mode">🌓</button>
+            <button id="menu-btn" aria-label="Menu">☰</button>
+        </div>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="directory.html" class="active">Directory</a></li>
                 <li><a href="#">Join</a></li>
                 <li><a href="#">Discover</a></li>
-                <li><button id="dark-mode-btn" aria-label="Toggle Dark Mode">🌓</button></li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h2>Directory</h2>
+        <h1>Brazzaville Chamber of Commerce Directory</h1>
 
         <div class="view-toggle">
             <button id="grid-view-btn" class="active" aria-label="Grid View">Grid</button>
@@ -68,23 +69,26 @@
 
     <footer>
         <div class="footer-info">
-            <p><strong>Timbuktu Chamber of Commerce</strong></p>
-            <p>10 Rue De La Paix</p>
-            <p>Timbuktu, Mali 999</p>
-            <p>info@timbuktucc.org</p>
-            <p>(223) 555-2300</p>
+            <p><strong>Brazzaville Chamber of Commerce</strong></p>
+            <p>10 Avenue Foch</p>
+            <p>Brazzaville, Republic of Congo</p>
+            <p>info@brazzavillecc.cg</p>
+            <p>(242) 06 555 2300</p>
         </div>
 
         <div class="social-links">
-            <a href="https://youtube.com" aria-label="YouTube" target="_blank">📺</a>
-            <a href="https://twitter.com" aria-label="Twitter" target="_blank">🐦</a>
-            <a href="https://linkedin.com" aria-label="LinkedIn" target="_blank">💼</a>
+            <a target="_blank" href="https://www.linkedin.com/in/inefablekoumba">
+                <img src="../images/linkedin.svg" alt="LinkedIn Logo" width="30" height="30">
+            </a>
+            <a target="_blank" href="https://www.facebook.com/InefableKoumba">
+                <img src="../images/facebook.svg" alt="Facebook Logo" width="30" height="30">
+            </a>
         </div>
 
         <div class="dev-info">
             <p>WDD231 Class Project</p>
             <p>Inefable KOUMBA</p>
-            <p>&copy; <span id="currentyear"></span> Timbuktu Chamber of Commerce</p>
+            <p>&copy; <span id="currentyear"></span> Brazzaville Chamber of Commerce</p>
             <p id="lastModified"></p>
         </div>
     </footer>

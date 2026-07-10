@@ -45,9 +45,10 @@ header {
   width: auto;
 }
 
-.logo-container h1 {
+.logo-container .site-title {
   font-size: 1.2rem;
   margin: 0;
+  font-weight: bold;
 }
 
 /* Navigation */
@@ -83,6 +84,12 @@ nav a:hover, nav a.active {
   background-color: rgba(0,0,0,0.2);
 }
 
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
 #menu-btn {
   background: none;
   border: none;
@@ -97,7 +104,6 @@ nav a:hover, nav a.active {
   cursor: pointer;
   font-size: 1.5rem;
   color: var(--text-dark);
-  margin-left: 10px;
 }
 
 /* Main Content */
@@ -143,56 +149,62 @@ h2 {
   background-color: var(--secondary-color);
   border: 1px solid #ccc;
   border-radius: 5px;
-  padding: 15px;
-  text-align: center;
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  overflow: hidden;
 }
 
-.card img {
-  max-width: 100px;
-  height: auto;
-  margin: 0 auto 10px;
-  background-color: white; /* to make placeholder visible */
+.card-top {
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  padding: 15px;
+}
+
+.card-top h3 {
+  margin: 0 0 5px 0;
+}
+
+.tagline {
+  font-style: italic;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.card-bottom {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  gap: 15px;
+}
+
+.card-bottom img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  background-color: white;
+  border: 1px solid #bbb;
   border-radius: 4px;
 }
 
-.card h3 {
-  margin: 10px 0 5px;
+.card-info {
+  text-align: left;
+  font-size: 0.8rem;
 }
 
-.card p {
+.card-info p {
   margin: 5px 0;
-  font-size: 0.9rem;
 }
 
-.card a {
+.card-info a {
   color: var(--accent-color);
   text-decoration: none;
   word-break: break-all;
 }
 
-/* List View */
-#members-container.list {
-  display: block;
+/* List View (Mobile defaults to list-like anyway) */
+#members-container.list .card-bottom img {
+  display: none;
 }
 
-#members-container.list .card {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  text-align: left;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-#members-container.list .card img {
-  display: none; /* Hide images in list view */
-}
-
-#members-container.list .card p {
-  margin: 0 10px;
-}
 
 /* Footer */
 footer {
@@ -201,6 +213,7 @@ footer {
   padding: 20px;
   font-size: 0.9rem;
   color: var(--text-dark);
+  font-family: 'Space Grotesk', sans-serif;
 }
 
 .social-links {
@@ -210,8 +223,6 @@ footer {
 .social-links a {
   display: inline-block;
   margin: 0 5px;
-  text-decoration: none;
-  font-size: 1.5rem;
 }
 
 .footer-info p {

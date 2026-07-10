@@ -1,65 +1,65 @@
 [
   {
-    "name": "Timbuktu Tech Solutions",
-    "address": "123 Innovation Drive, Timbuktu, Mali 999",
-    "phone": "555-0101",
-    "website": "https://timbuktutech.com",
+    "name": "Congo Tech Innovations",
+    "address": "15 Avenue Amilcar Cabral, Brazzaville",
+    "phone": "06 123 4567",
+    "website": "https://congotechinnovations.cg",
     "image": "tech.png",
     "membershipLevel": 3,
-    "additionalInfo": "Leading IT solutions provider."
+    "additionalInfo": "Leading tech solutions in the Congo."
   },
   {
-    "name": "Desert Oasis Cafe",
-    "address": "45 Sand Dune Way, Timbuktu, Mali 999",
-    "phone": "555-0102",
-    "website": "https://desertoasis.com",
+    "name": "Brazza Cafe & Roastery",
+    "address": "Avenue Foch, Centre-Ville, Brazzaville",
+    "phone": "05 987 6543",
+    "website": "https://brazzacafe.cg",
     "image": "cafe.png",
     "membershipLevel": 1,
-    "additionalInfo": "Best coffee in the Sahara."
+    "additionalInfo": "Freshly roasted coffee every morning."
   },
   {
-    "name": "Mali Transport Co.",
-    "address": "78 Caravan Route, Timbuktu, Mali 999",
-    "phone": "555-0103",
-    "website": "https://malitransport.com",
+    "name": "TransCongo Logistics",
+    "address": "Zone Industrielle Mpila, Brazzaville",
+    "phone": "04 555 1234",
+    "website": "https://transcongologistics.cg",
     "image": "transport.png",
     "membershipLevel": 2,
-    "additionalInfo": "Reliable logistics and transport."
+    "additionalInfo": "Reliable freight and transport services."
   },
   {
-    "name": "Ancient Manuscripts Library",
-    "address": "1 History Plaza, Timbuktu, Mali 999",
-    "phone": "555-0104",
-    "website": "https://timbuktulibrary.org",
+    "name": "Brazzaville National Library",
+    "address": "Rond-Point Poto-Poto, Brazzaville",
+    "phone": "06 777 8899",
+    "website": "https://brazzalibrary.org",
     "image": "library.png",
     "membershipLevel": 1,
-    "additionalInfo": "Preserving our heritage."
+    "additionalInfo": "Preserving Congolese literature and history."
   },
   {
-    "name": "Timbuktu Artisan Market",
-    "address": "99 Craft Street, Timbuktu, Mali 999",
-    "phone": "555-0105",
-    "website": "https://artisanmarket.com",
+    "name": "Poto-Poto Artisan Market",
+    "address": "Rue Mboko, Poto-Poto, Brazzaville",
+    "phone": "05 222 3344",
+    "website": "https://potopotomarket.cg",
     "image": "market.png",
     "membershipLevel": 2,
-    "additionalInfo": "Handcrafted goods from local artisans."
+    "additionalInfo": "Authentic handcrafted goods and arts."
   },
   {
-    "name": "Sahara Solar Energy",
-    "address": "200 Sunbeam Blvd, Timbuktu, Mali 999",
-    "phone": "555-0106",
-    "website": "https://saharasolar.com",
+    "name": "Equatorial Solar Power",
+    "address": "Boulevard Denis Sassou Nguesso, Brazzaville",
+    "phone": "04 999 0000",
+    "website": "https://equatorialsolar.cg",
     "image": "solar.png",
     "membershipLevel": 3,
-    "additionalInfo": "Powering the future."
+    "additionalInfo": "Sustainable energy for a brighter future."
   },
   {
-    "name": "Oasis Water Works",
-    "address": "10 Spring Road, Timbuktu, Mali 999",
-    "phone": "555-0107",
-    "website": "https://oasiswater.com",
+    "name": "Congo Pure Water",
+    "address": "Avenue de l'OUA, Brazzaville",
+    "phone": "06 111 2222",
+    "website": "https://congopurewater.cg",
     "image": "water.png",
     "membershipLevel": 2,
-    "additionalInfo": "Clean water for everyone."
+    "additionalInfo": "Clean and safe drinking water."
   }
 ]
