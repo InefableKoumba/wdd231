@@ -1,19 +1,28 @@
-/* chamber/css/larger.css - Tablet and Desktop Views */
 @media (min-width: 768px) {
   header {
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap: 20px;
   }
 
-  /* Desktop Navigation */
+  .logo-container {
+    margin-right: auto;
+  }
+
   #menu-btn {
     display: none;
   }
 
+  .header-actions {
+    order: 2;
+  }
+
   nav {
-    display: block !important; /* Override inline styles from JS */
+    display: block !important;
     background-color: transparent;
     position: static;
+    width: auto;
+    order: 1;
   }
 
   nav ul {
@@ -35,9 +44,15 @@
     color: var(--text-light);
   }
 
-  nav a:hover, nav a.active {
+  nav a:hover {
     background-color: var(--primary-color);
     color: var(--text-light);
+  }
+
+  nav a.active {
+    background-color: var(--accent-color);
+    color: var(--text-light);
+    font-weight: 900;
   }
 
   /* Desktop Grid View */
@@ -46,7 +61,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
   }
-  
+
   #members-container.list {
     display: flex;
     flex-direction: column;
@@ -61,7 +76,9 @@
     text-align: left;
   }
 
-  .footer-info, .social-links, .dev-info {
+  .footer-info,
+  .social-links,
+  .dev-info {
     flex: 1;
     min-width: 250px;
     padding: 10px;

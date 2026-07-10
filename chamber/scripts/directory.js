@@ -1,5 +1,3 @@
-// chamber/js/directory.js
-
 document.addEventListener("DOMContentLoaded", () => {
   const url = "data/members.json";
   const membersContainer = document.getElementById("members-container");
@@ -18,14 +16,12 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function displayMembers(members) {
-    membersContainer.innerHTML = ""; // Clear existing
+    membersContainer.innerHTML = "";
 
     members.forEach((member) => {
-      // Create elements
       const card = document.createElement("section");
       card.classList.add("card");
 
-      // Top row container (name + tagline)
       const topSection = document.createElement("div");
       topSection.classList.add("card-top");
 
@@ -39,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
       topSection.appendChild(h3);
       topSection.appendChild(pTagline);
 
-      // Bottom row container (image + contact info)
       const bottomSection = document.createElement("div");
       bottomSection.classList.add("card-bottom");
 
@@ -54,13 +49,13 @@ document.addEventListener("DOMContentLoaded", () => {
       infoSection.classList.add("card-info");
 
       const pEmail = document.createElement("p");
-      pEmail.innerHTML = `<strong>EMAIL:</strong> info@${member.website.replace('https://', '')}`;
-      
+      pEmail.innerHTML = `<strong>EMAIL:</strong> info@${member.website.replace("https://", "")}`;
+
       const pPhone = document.createElement("p");
       pPhone.innerHTML = `<strong>PHONE:</strong> ${member.phone}`;
-      
+
       const pURL = document.createElement("p");
-      pURL.innerHTML = `<strong>URL:</strong> <a href="${member.website}" target="_blank">${member.website.replace('https://', '')}</a>`;
+      pURL.innerHTML = `<strong>URL:</strong> <a href="${member.website}" target="_blank">${member.website.replace("https://", "")}</a>`;
 
       infoSection.appendChild(pEmail);
       infoSection.appendChild(pPhone);
@@ -69,7 +64,6 @@ document.addEventListener("DOMContentLoaded", () => {
       bottomSection.appendChild(img);
       bottomSection.appendChild(infoSection);
 
-      // Build card
       card.appendChild(topSection);
       card.appendChild(bottomSection);
 
@@ -77,7 +71,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // View Toggles
   if (gridBtn && listBtn) {
     gridBtn.addEventListener("click", () => {
       membersContainer.classList.remove("list");
@@ -92,6 +85,5 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // Initialize
   getMembers();
 });
