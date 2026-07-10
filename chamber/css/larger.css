@@ -1,0 +1,68 @@
+/* chamber/css/larger.css - Tablet and Desktop Views */
+@media (min-width: 768px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  /* Desktop Navigation */
+  #menu-btn {
+    display: none;
+  }
+
+  nav {
+    display: block !important; /* Override inline styles from JS */
+    background-color: transparent;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  nav li {
+    border-bottom: none;
+  }
+
+  nav a {
+    color: var(--text-dark);
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+
+  .dark-mode nav a {
+    color: var(--text-light);
+  }
+
+  nav a:hover, nav a.active {
+    background-color: var(--primary-color);
+    color: var(--text-light);
+  }
+
+  /* Desktop Grid View */
+  #members-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+  }
+  
+  #members-container.list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Footer Layout */
+  footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+  }
+
+  .footer-info, .social-links, .dev-info {
+    flex: 1;
+    min-width: 250px;
+    padding: 10px;
+  }
+}

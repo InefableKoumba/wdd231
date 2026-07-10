@@ -1,0 +1,219 @@
+/* chamber/css/small.css - Mobile First Design */
+:root {
+  --primary-color: #2c3e50;
+  --secondary-color: #ecf0f1;
+  --accent-color: #e74c3c;
+  --text-dark: #333;
+  --text-light: #fff;
+  --bg-color: #fff;
+  --footer-bg: #bdc3c7;
+}
+
+/* Dark Mode Variables */
+.dark-mode {
+  --primary-color: #1a252f;
+  --secondary-color: #34495e;
+  --text-dark: #f0f0f0;
+  --bg-color: #222;
+  --footer-bg: #111;
+}
+
+body {
+  font-family: 'Open Sans', 'Roboto', sans-serif;
+  color: var(--text-dark);
+  background-color: var(--bg-color);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--secondary-color);
+  padding: 10px 20px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-container img {
+  height: 60px;
+  width: auto;
+}
+
+.logo-container h1 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+/* Navigation */
+nav {
+  display: none;
+  background-color: var(--primary-color);
+}
+
+nav.open {
+  display: block;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav li {
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+nav a {
+  display: block;
+  padding: 15px;
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover, nav a.active {
+  background-color: rgba(0,0,0,0.2);
+}
+
+#menu-btn {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--text-dark);
+}
+
+#dark-mode-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  margin-left: 10px;
+}
+
+/* Main Content */
+main {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h2 {
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 5px;
+}
+
+/* Toggle Buttons */
+.view-toggle {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.view-toggle button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: var(--secondary-color);
+  border: 1px solid #ccc;
+  cursor: pointer;
+  color: var(--text-dark);
+}
+
+.view-toggle button.active {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+}
+
+/* Cards / Grid View */
+#members-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.card {
+  background-color: var(--secondary-color);
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.card img {
+  max-width: 100px;
+  height: auto;
+  margin: 0 auto 10px;
+  background-color: white; /* to make placeholder visible */
+  border-radius: 4px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.card p {
+  margin: 5px 0;
+  font-size: 0.9rem;
+}
+
+.card a {
+  color: var(--accent-color);
+  text-decoration: none;
+  word-break: break-all;
+}
+
+/* List View */
+#members-container.list {
+  display: block;
+}
+
+#members-container.list .card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+#members-container.list .card img {
+  display: none; /* Hide images in list view */
+}
+
+#members-container.list .card p {
+  margin: 0 10px;
+}
+
+/* Footer */
+footer {
+  background-color: var(--footer-bg);
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+}
+
+.social-links {
+  margin: 15px 0;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 5px;
+  text-decoration: none;
+  font-size: 1.5rem;
+}
+
+.footer-info p {
+  margin: 5px 0;
+}

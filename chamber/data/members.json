@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Timbuktu Tech Solutions",
+    "address": "123 Innovation Drive, Timbuktu, Mali 999",
+    "phone": "555-0101",
+    "website": "https://timbuktutech.com",
+    "image": "tech.png",
+    "membershipLevel": 3,
+    "additionalInfo": "Leading IT solutions provider."
+  },
+  {
+    "name": "Desert Oasis Cafe",
+    "address": "45 Sand Dune Way, Timbuktu, Mali 999",
+    "phone": "555-0102",
+    "website": "https://desertoasis.com",
+    "image": "cafe.png",
+    "membershipLevel": 1,
+    "additionalInfo": "Best coffee in the Sahara."
+  },
+  {
+    "name": "Mali Transport Co.",
+    "address": "78 Caravan Route, Timbuktu, Mali 999",
+    "phone": "555-0103",
+    "website": "https://malitransport.com",
+    "image": "transport.png",
+    "membershipLevel": 2,
+    "additionalInfo": "Reliable logistics and transport."
+  },
+  {
+    "name": "Ancient Manuscripts Library",
+    "address": "1 History Plaza, Timbuktu, Mali 999",
+    "phone": "555-0104",
+    "website": "https://timbuktulibrary.org",
+    "image": "library.png",
+    "membershipLevel": 1,
+    "additionalInfo": "Preserving our heritage."
+  },
+  {
+    "name": "Timbuktu Artisan Market",
+    "address": "99 Craft Street, Timbuktu, Mali 999",
+    "phone": "555-0105",
+    "website": "https://artisanmarket.com",
+    "image": "market.png",
+    "membershipLevel": 2,
+    "additionalInfo": "Handcrafted goods from local artisans."
+  },
+  {
+    "name": "Sahara Solar Energy",
+    "address": "200 Sunbeam Blvd, Timbuktu, Mali 999",
+    "phone": "555-0106",
+    "website": "https://saharasolar.com",
+    "image": "solar.png",
+    "membershipLevel": 3,
+    "additionalInfo": "Powering the future."
+  },
+  {
+    "name": "Oasis Water Works",
+    "address": "10 Spring Road, Timbuktu, Mali 999",
+    "phone": "555-0107",
+    "website": "https://oasiswater.com",
+    "image": "water.png",
+    "membershipLevel": 2,
+    "additionalInfo": "Clean water for everyone."
+  }
+]
