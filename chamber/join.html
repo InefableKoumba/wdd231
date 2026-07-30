@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazzaville Chamber of Commerce - Join Us</title>
+    <meta name="description" content="Apply for membership with the Brazzaville Chamber of Commerce. Select a membership tier and join our growing community of businesses.">
+    <meta name="author" content="Inefable KOUMBA">
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://inefablekoumba.github.io/wdd231/chamber/join.html">
+    <meta property="og:title" content="Brazzaville Chamber of Commerce - Join Us">
+    <meta property="og:description" content="Apply for membership with the Brazzaville Chamber of Commerce and discover incredible business benefits.">
+    <meta property="og:image" content="https://inefablekoumba.github.io/wdd231/chamber/images/logo.png">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Brazzaville Chamber Logo" width="60" height="60">
+            <span class="site-title">Brazzaville Chamber<br>of Commerce</span>
+        </div>
+        <div class="header-actions">
+            <button id="dark-mode-btn" aria-label="Toggle Dark Mode">🌓</button>
+            <button id="menu-btn" aria-label="Menu">☰</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Membership Application</h1>
+
+        <div class="join-layout">
+            <section class="form-container">
+                <h2>Join the Chamber</h2>
+                <p>Fill out the application form below to become a registered member of the Brazzaville Chamber of Commerce.</p>
+                
+                <form method="get" action="thankyou.html" id="join-form">
+                    <label>
+                        <span>First Name <span class="required-star">*</span></span>
+                        <input type="text" name="fname" id="fname" required autocomplete="given-name" title="First Name">
+                    </label>
+
+                    <label>
+                        <span>Last Name <span class="required-star">*</span></span>
+                        <input type="text" name="lname" id="lname" required autocomplete="family-name" title="Last Name">
+                    </label>
+
+                    <label>
+                        <span>Organizational Title</span>
+                        <input type="text" name="orgtitle" id="orgtitle" autocomplete="organization-title" title="Organizational Title (Minimum 7 characters, letters, hyphens, and spaces only)" pattern="[A-Za-z\s\-]{7,}">
+                    </label>
+
+                    <label>
+                        <span>Email Address <span class="required-star">*</span></span>
+                        <input type="email" name="email" id="email" required autocomplete="email" placeholder="example@domain.com" title="Email Address">
+                    </label>
+
+                    <label>
+                        <span>Mobile Phone Number <span class="required-star">*</span></span>
+                        <input type="tel" name="phone" id="phone" required autocomplete="tel" title="Mobile Phone Number">
+                    </label>
+
+                    <label>
+                        <span>Business / Organization Name <span class="required-star">*</span></span>
+                        <input type="text" name="organization" id="organization" required autocomplete="organization" title="Business or Organization Name">
+                    </label>
+
+                    <fieldset class="membership-selection">
+                        <legend>Membership Level <span class="required-star">*</span></legend>
+                        
+                        <label class="radio-label">
+                            <input type="radio" name="membership" value="np" required title="Non-Profit Membership">
+                            <span>NP Membership (Non-Profit - No Fee)</span>
+                        </label>
+
+                        <label class="radio-label">
+                            <input type="radio" name="membership" value="bronze" title="Bronze Membership">
+                            <span>Bronze Membership</span>
+                        </label>
+
+                        <label class="radio-label">
+                            <input type="radio" name="membership" value="silver" title="Silver Membership">
+                            <span>Silver Membership</span>
+                        </label>
+
+                        <label class="radio-label">
+                            <input type="radio" name="membership" value="gold" title="Gold Membership">
+                            <span>Gold Membership</span>
+                        </label>
+                    </fieldset>
+
+                    <label>
+                        <span>Organization Description</span>
+                        <textarea name="description" id="description" rows="5" title="Organization Description"></textarea>
+                    </label>
+
+                    <input type="hidden" name="timestamp" id="timestamp">
+
+                    <input type="submit" value="Submit Application" class="submit-btn">
+                </form>
+            </section>
+
+            <section class="membership-cards-container">
+                <h2>Membership Tiers</h2>
+                
+                <div class="level-card level-np">
+                    <h3>NP Membership</h3>
+                    <p class="card-badge">Free for Non-Profits</p>
+                    <p>Designed specifically for non-profit organizations and community groups.</p>
+                    <a href="#" class="open-modal-btn" data-modal="modal-np">View Benefits & Details &rarr;</a>
+                </div>
+
+                <div class="level-card level-bronze">
+                    <h3>Bronze Membership</h3>
+                    <p class="card-badge">Starter Tier</p>
+                    <p>Essential entry-level benefits for startup businesses looking to build connections.</p>
+                    <a href="#" class="open-modal-btn" data-modal="modal-bronze">View Benefits & Details &rarr;</a>
+                </div>
+
+                <div class="level-card level-silver">
+                    <h3>Silver Membership</h3>
+                    <p class="card-badge">Most Popular</p>
+                    <p>Enhanced visibility and networking opportunities for growing enterprises.</p>
+                    <a href="#" class="open-modal-btn" data-modal="modal-silver">View Benefits & Details &rarr;</a>
+                </div>
+
+                <div class="level-card level-gold">
+                    <h3>Gold Membership</h3>
+                    <p class="card-badge">Premium Tier</p>
+                    <p>Maximum exposure, VIP event access, and home page spotlight positions.</p>
+                    <a href="#" class="open-modal-btn" data-modal="modal-gold">View Benefits & Details &rarr;</a>
+                </div>
+            </section>
+        </div>
+
+        <!-- Modals for Membership Level Details -->
+        <dialog id="modal-np" class="membership-dialog">
+            <button class="close-modal-btn" aria-label="Close dialog">&times;</button>
+            <h2>NP Membership (Non-Profit)</h2>
+            <p class="dialog-price"><strong>Cost:</strong> Free (0 FCFA / $0)</p>
+            <ul>
+                <li>Listing in the public online Chamber Directory</li>
+                <li>Access to monthly networking mixers</li>
+                <li>Quarterly non-profit sector roundtable discussions</li>
+                <li>Chamber badge for your website</li>
+            </ul>
+        </dialog>
+
+        <dialog id="modal-bronze" class="membership-dialog">
+            <button class="close-modal-btn" aria-label="Close dialog">&times;</button>
+            <h2>Bronze Membership</h2>
+            <p class="dialog-price"><strong>Cost:</strong> 50,000 FCFA / year ($100/yr)</p>
+            <ul>
+                <li>Standard Directory listing with website link</li>
+                <li>Invitation to general member workshops & seminars</li>
+                <li>10% discount on Chamber event tickets</li>
+                <li>Member spotlight in monthly newsletter (1x per year)</li>
+            </ul>
+        </dialog>
+
+        <dialog id="modal-silver" class="membership-dialog">
+            <button class="close-modal-btn" aria-label="Close dialog">&times;</button>
+            <h2>Silver Membership</h2>
+            <p class="dialog-price"><strong>Cost:</strong> 150,000 FCFA / year ($300/yr)</p>
+            <ul>
+                <li>Highlighted Directory listing with logo display</li>
+                <li>20% discount on Chamber event tickets and booth rentals</li>
+                <li>Home page spotlight rotation (2x per year)</li>
+                <li>Access to VIP networking events with civic leaders</li>
+                <li>Sponsorship opportunities at Chamber luncheons</li>
+            </ul>
+        </dialog>
+
+        <dialog id="modal-gold" class="membership-dialog">
+            <button class="close-modal-btn" aria-label="Close dialog">&times;</button>
+            <h2>Gold Membership</h2>
+            <p class="dialog-price"><strong>Cost:</strong> 300,000 FCFA / year ($600/yr)</p>
+            <ul>
+                <li>Premium top-tier Directory placement with custom bio & banner</li>
+                <li>Permanent Home Page Spotlight Position</li>
+                <li>Free access to all Chamber training programs for up to 5 staff</li>
+                <li>VIP reserved seating at annual business summit</li>
+                <li>Direct advisory board representation & policy input</li>
+            </ul>
+        </dialog>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>Brazzaville Chamber of Commerce</strong></p>
+            <p>10 Avenue Foch</p>
+            <p>Brazzaville, Republic of Congo</p>
+            <p>info@brazzavillecc.cg</p>
+            <p>(242) 06 555 2300</p>
+        </div>
+
+        <div class="social-links">
+            <a target="_blank" href="https://www.linkedin.com/in/inefablekoumba">
+                <img src="../images/linkedin.svg" alt="LinkedIn Logo" width="30" height="30">
+            </a>
+            <a target="_blank" href="https://www.facebook.com/InefableKoumba">
+                <img src="../images/facebook.svg" alt="Facebook Logo" width="30" height="30">
+            </a>
+        </div>
+
+        <div class="dev-info">
+            <p>WDD231</p>
+            <p>Inefable KOUMBA</p>
+            <p>&copy; <span id="currentyear"></span> Brazzaville Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
