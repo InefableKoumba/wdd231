@@ -14,12 +14,6 @@ document.addEventListener("DOMContentLoaded", () => {
     { key: "timestamp", label: "Date & Time Submitted" },
   ];
 
-  const optionalFields = [
-    { key: "orgtitle", label: "Organizational Title" },
-    { key: "membership", label: "Membership Level" },
-    { key: "description", label: "Business Description" },
-  ];
-
   let html = `<div class="thankyou-card">
     <h2>Submitted Registration Details</h2>
     <dl class="results-list">`;
@@ -33,9 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
           if (!isNaN(dateObj.getTime())) {
             value = dateObj.toLocaleString();
           }
-        } catch (e) {
-          // fallback to raw value if parsing fails
-        }
+        } catch (e) {}
       }
       html += `<dt>${field.label}:</dt><dd>${escapeHtml(value)}</dd>`;
     } else {
@@ -43,7 +35,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Display membership title nicely if present
   const membershipVal = urlParams.get("membership");
   if (membershipVal) {
     const levelNames = {
@@ -52,7 +43,8 @@ document.addEventListener("DOMContentLoaded", () => {
       silver: "Silver Membership",
       gold: "Gold Membership",
     };
-    const formattedLevel = levelNames[membershipVal.toLowerCase()] || membershipVal;
+    const formattedLevel =
+      levelNames[membershipVal.toLowerCase()] || membershipVal;
     html += `<dt>Membership Level:</dt><dd>${escapeHtml(formattedLevel)}</dd>`;
   }
 

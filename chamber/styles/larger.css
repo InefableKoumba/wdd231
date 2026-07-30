@@ -89,5 +89,17 @@
     gap: 40px;
     align-items: start;
   }
+
+  /* Home Page Layout - Large Screens */
+  .home-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .spotlights-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
+
 

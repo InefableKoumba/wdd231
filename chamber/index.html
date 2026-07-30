@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brazzaville Chamber of Commerce - Home</title>
+    <meta name="description"
+        content="Welcome to the Brazzaville Chamber of Commerce. Connecting local businesses, driving economic growth, and building community in Congo.">
+    <meta name="author" content="Inefable KOUMBA">
+
+    <link rel="icon" href="images/favicon.png" type="image/png">
+
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://inefablekoumba.github.io/wdd231/chamber/index.html">
+    <meta property="og:title" content="Brazzaville Chamber of Commerce - Home">
+    <meta property="og:description"
+        content="Connecting businesses and driving economic growth in Brazzaville, Republic of Congo.">
+    <meta property="og:image" content="https://inefablekoumba.github.io/wdd231/chamber/images/logo.png">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/home.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="images/logo.png" alt="Brazzaville Chamber Logo" width="60" height="60">
+            <span class="site-title">Brazzaville Chamber<br>of Commerce</span>
+        </div>
+        <div class="header-actions">
+            <button id="dark-mode-btn" aria-label="Toggle Dark Mode">🌓</button>
+            <button id="menu-btn" aria-label="Menu">☰</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-container">
+            <img src="images/hero.webp" alt="Brazzaville Skyline and Congo River" class="hero-img" width="1200"
+                height="600">
+            <div class="hero-cta-box">
+                <h2>Empowering Local Businesses in Brazzaville</h2>
+                <p>Join over 200+ local enterprises growing together through networking, advocacy, and economic
+                    development.</p>
+                <a href="join.html" class="cta-button">Join the Chamber Today &rarr;</a>
+            </div>
+        </section>
+
+        <div class="home-grid">
+
+            <section class="home-card events-card">
+                <h2>Current Events</h2>
+                <ul class="events-list">
+                    <li>
+                        <span class="event-date">AUG 15</span>
+                        <div class="event-info">
+                            <h3>Brazzaville Business Expo 2026</h3>
+                            <p>Palais des Congrès • 09:00 AM - 05:00 PM</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="event-date">SEP 02</span>
+                        <div class="event-info">
+                            <h3>Quarterly CEO Networking Luncheon</h3>
+                            <p>Radisson Blu Hotel • 12:30 PM - 02:30 PM</p>
+                        </div>
+                    </li>
+                    <li>
+                        <span class="event-date">SEP 18</span>
+                        <div class="event-info">
+                            <h3>Digital Innovation & Tech Workshop</h3>
+                            <p>Chamber Auditorium • 02:00 PM - 04:30 PM</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="home-card weather-card">
+                <h2>Weather in Brazzaville</h2>
+                <div class="weather-current">
+                    <img id="weather-icon" src="" alt="" style="display:none;" width="64" height="64">
+                    <div class="weather-temp-box">
+                        <span id="current-temp" class="temp-display">--°C</span>
+                        <span id="weather-desc" class="desc-display">Loading...</span>
+                    </div>
+                </div>
+
+                <h3>3-Day Forecast</h3>
+                <div id="forecast-container" class="forecast-grid">
+                </div>
+            </section>
+        </div>
+
+        <section class="spotlights-section">
+            <h2>Member Spotlights</h2>
+            <div id="spotlights-container" class="spotlights-grid">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-info">
+            <p><strong>Brazzaville Chamber of Commerce</strong></p>
+            <p>10 Avenue Foch</p>
+            <p>Brazzaville, Republic of Congo</p>
+            <p>info@brazzavillecc.cg</p>
+            <p>(242) 06 555 2300</p>
+        </div>
+
+        <div class="social-links">
+            <a target="_blank" href="https://www.linkedin.com/in/inefablekoumba">
+                <img src="../images/linkedin.svg" alt="LinkedIn Logo" width="30" height="30">
+            </a>
+            <a target="_blank" href="https://www.facebook.com/InefableKoumba">
+                <img src="../images/facebook.svg" alt="Facebook Logo" width="30" height="30">
+            </a>
+        </div>
+
+        <div class="dev-info">
+            <p>WDD231</p>
+            <p>Inefable KOUMBA</p>
+            <p>&copy; <span id="currentyear"></span> Brazzaville Chamber of Commerce</p>
+            <p id="lastModified"></p>
+        </div>
+    </footer>
+</body>
+
+</html>

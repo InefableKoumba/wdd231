@@ -1,12 +1,10 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // Set hidden timestamp field with ISO string or formatted date string
   const timestampField = document.getElementById("timestamp");
   if (timestampField) {
     const now = new Date();
     timestampField.value = now.toISOString();
   }
 
-  // Modal open and close handlers
   const openModalButtons = document.querySelectorAll(".open-modal-btn");
   const closeModalButtons = document.querySelectorAll(".close-modal-btn");
 
@@ -30,7 +28,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // Close dialog when clicking outside (on backdrop)
   const dialogs = document.querySelectorAll("dialog");
   dialogs.forEach((dialog) => {
     dialog.addEventListener("click", (e) => {
