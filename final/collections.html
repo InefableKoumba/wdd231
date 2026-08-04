@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="View saved favorite photos and custom memory board statistics stored in client-side LocalStorage.">
+    <meta name="author" content="Inefable KOUMBA">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="PhotoGallery - Custom Collections & Favorites">
+    <meta property="og:description" content="View your saved photograph collections and summary board statistics.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://inefablekoumba.github.io/wdd231/final/collections.html">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80">
+
+    <title>PhotoGallery | Saved Collections & Favorites</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Fonts & CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <!-- ES Module Script -->
+    <script type="module" src="scripts/collections.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="brand-logo">
+                <div class="logo-icon">P</div>
+                <div class="brand-title">Photo<span>Gallery</span></div>
+            </a>
+            
+            <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Gallery Home</a></li>
+                    <li><a href="collections.html" class="nav-link active">Favorites & Boards</a></li>
+                    <li><a href="about.html" class="nav-link">Story & Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero-banner">
+            <h1>Your Favorite Memory Board</h1>
+            <p>Here are your bookmarked photos stored locally in your browser session. Manage your saved memory boards and track your favorite photography categories.</p>
+        </section>
+
+        <!-- Summary Statistics Widget -->
+        <section class="controls-bar" style="margin-bottom: 30px;">
+            <div style="display: flex; gap: 30px; flex-wrap: wrap; justify-content: space-around; width: 100%;">
+                <div style="text-align: center;">
+                    <div style="font-size: 1.8rem; font-weight: 700; color: var(--accent-amber);" id="total-favorites-count">0</div>
+                    <div style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase;">Saved Favorites</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 1.8rem; font-weight: 700; color: var(--accent-amber);" id="categories-count">0</div>
+                    <div style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase;">Unique Categories</div>
+                </div>
+                <div style="text-align: center;">
+                    <div style="font-size: 1.8rem; font-weight: 700; color: var(--accent-amber);" id="popular-category">None</div>
+                    <div style="font-size: 0.85rem; color: var(--text-muted); text-transform: uppercase;">Top Category</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Dynamic Collections Grid -->
+        <section class="gallery-grid" id="collections-grid">
+            <!-- Dynamically populated via collections.js -->
+        </section>
+
+        <!-- Shared Modal Dialog -->
+        <dialog id="photo-modal" class="photo-modal" aria-labelledby="modal-title">
+            <div class="modal-header">
+                <h3 id="modal-title">Photo Details</h3>
+                <button id="modal-close-btn" class="modal-close-btn" aria-label="Close dialog">✕</button>
+            </div>
+            <div class="modal-body">
+                <img id="modal-img" src="" alt="" class="modal-img">
+                <dl class="modal-details-grid">
+                    <div class="detail-item">
+                        <dt>Category</dt>
+                        <dd id="modal-category">-</dd>
+                    </div>
+                    <div class="detail-item">
+                        <dt>Photographer</dt>
+                        <dd id="modal-photographer">-</dd>
+                    </div>
+                    <div class="detail-item">
+                        <dt>Capture Date</dt>
+                        <dd id="modal-date">-</dd>
+                    </div>
+                    <div class="detail-item">
+                        <dt>Location</dt>
+                        <dd id="modal-location">-</dd>
+                    </div>
+                    <div class="detail-item">
+                        <dt>Camera & Lens</dt>
+                        <dd id="modal-camera">-</dd>
+                    </div>
+                </dl>
+                <p id="modal-description" style="color: var(--text-muted); line-height: 1.5;"></p>
+            </div>
+        </dialog>
+
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="about.html">About & Feedback</a>
+            <a href="attributions.html">Attributions</a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> | Inefable KOUMBA | Republic of Congo</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Resource attributions and source citations for photography, fonts, and assets used in PhotoGallery.">
+    <meta name="author" content="Inefable KOUMBA">
+    
+    <title>PhotoGallery | Resource Attributions</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Fonts & CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <script type="module" src="scripts/main.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="brand-logo">
+                <div class="logo-icon">P</div>
+                <div class="brand-title">Photo<span>Gallery</span></div>
+            </a>
+            
+            <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Gallery Home</a></li>
+                    <li><a href="collections.html" class="nav-link">Favorites & Boards</a></li>
+                    <li><a href="about.html" class="nav-link">Story & Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="form-container" style="max-width: 800px;">
+            <h1 style="font-family: var(--font-heading); font-size: 2.2rem; color: var(--accent-amber); margin-bottom: 20px; text-align: center;">Resource Attributions & Citations</h1>
+            
+            <div style="line-height: 1.8; color: var(--text-main);">
+                <h3 style="color: var(--accent-amber); margin-top: 15px;">Imagery Sources</h3>
+                <p>All high-resolution photography assets featured across the gallery, preview modals, and thumbnail cards are sourced from <a href="https://unsplash.com" target="_blank" rel="noopener" style="color: var(--accent-amber);">Unsplash</a> under the Unsplash License (free to use for commercial and non-commercial purposes).</p>
+                <ul>
+                    <li>Nature & Mountain Photography by Lucas Clara, Chloe Bennett, and Sarah Jenkins.</li>
+                    <li>Urban & Street Photography by Kenji Sato, Mateo Rossi, and Liam O'Connor.</li>
+                    <li>Architecture Photography by Elena Rostova, Marcus Thorne, and Henrik Lindqvist.</li>
+                    <li>Portrait Photography by Amara Diallo, Carlos Mendoza, and Nisha Patel.</li>
+                </ul>
+
+                <h3 style="color: var(--accent-amber); margin-top: 25px;">Web Fonts</h3>
+                <p>Typography provided by <a href="https://fonts.google.com" target="_blank" rel="noopener" style="color: var(--accent-amber);">Google Fonts</a>:</p>
+                <ul>
+                    <li><strong>Playfair Display</strong> - Designed by Claus Eggers Sørensen (SIL Open Font License).</li>
+                    <li><strong>Plus Jakarta Sans</strong> - Designed by Tokotype (SIL Open Font License).</li>
+                </ul>
+
+                <h3 style="color: var(--accent-amber); margin-top: 25px;">Technical Libraries & APIs</h3>
+                <ul>
+                    <li>Vanilla JavaScript ES Modules & Native Web <code>fetch()</code> API.</li>
+                    <li>Browser Native <code>localStorage</code> Key-Value Store.</li>
+                    <li>HTML5 Semantic Elements & Native <code>&lt;dialog&gt;</code> element.</li>
+                </ul>
+            </div>
+
+            <div style="text-align: center; margin-top: 30px;">
+                <a href="index.html" class="submit-btn" style="text-decoration: none; display: inline-block;">Return to Gallery</a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="about.html">About & Feedback</a>
+            <a href="attributions.html">Attributions</a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> | Inefable KOUMBA | Republic of Congo</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>

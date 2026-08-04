@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Site plan for PhotoGallery - a website for organizing and viewing photos in themed albums.">
+    <meta name="author" content="Inefable KOUMBA">
+    <title>Site Plan: PhotoGallery | Inefable KOUMBA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="site-plan.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <span class="badge">WDD 231 Individual Project</span>
+            <h1>PhotoGallery Site Plan</h1>
+            <p class="subtitle">By <strong>Inefable KOUMBA</strong></p>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- Section 1: Site Name -->
+        <section class="plan-card">
+            <h2>Site Name</h2>
+            <div class="content-block">
+                <p class="site-title-display">PhotoGallery</p>
+                <p><strong>Why this name?</strong> I chose "PhotoGallery" because it is simple and directly tells
+                    visitors what the site is about: a place to view, organize, and look back at photo collections.</p>
+                <p><strong>Optional domain availability:</strong> photogallery-memories.org or myphotogallery.app</p>
+            </div>
+        </section>
+
+        <!-- Section 2: Site Purpose -->
+        <section class="plan-card">
+            <h2>Site Purpose</h2>
+            <div class="content-block">
+                <p>The main goal of <strong>PhotoGallery</strong> is to give people who love taking pictures a clean and
+                    simple space to sort, filter, and save photos into themed albums like Nature, Urban, and
+                    Architecture.</p>
+                <p>On this site, users can:</p>
+                <ul>
+                    <li>Browse a gallery of photos with category filters and click on any image to view details in a
+                        pop-up modal.</li>
+                    <li>Save their favorite pictures to custom albums that stay saved in their browser using local
+                        storage.</li>
+                    <li>Read the story behind the project and send feedback through a simple form that shows a
+                        confirmation page.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 3: Scenarios -->
+        <section class="plan-card">
+            <h2>Target Audience Scenarios</h2>
+            <div class="content-block">
+                <div class="scenario-item">
+                    <h3>Scenario 1</h3>
+                    <p class="scenario-q">"How can I filter photos by categories like Nature or Architecture and see
+                        more details about a picture?"</p>
+                    <p class="scenario-a"><strong>Answer:</strong> On the home page, you can click category buttons to
+                        filter the grid, and click any photo to open a pop-up window showing the photographer, location,
+                        camera settings, and description.</p>
+                </div>
+                <div class="scenario-item">
+                    <h3>Scenario 2</h3>
+                    <p class="scenario-q">"Can I save my favorite photos without making an account?"</p>
+                    <p class="scenario-a"><strong>Answer:</strong> Yes. You can click the heart icon on any photo to
+                        save it to your Favorites page. The site uses <code>localStorage</code> so your saved photos
+                        stay saved even if you refresh or close the page.</p>
+                </div>
+                <div class="scenario-item">
+                    <h3>Scenario 3</h3>
+                    <p class="scenario-q">"Where can I learn more about this project or send feedback to the creator?"
+                    </p>
+                    <p class="scenario-a"><strong>Answer:</strong> You can visit the About page to read why I created
+                        this photo manager and fill out the visitor feedback form to share your thoughts.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Color Scheme -->
+        <section class="plan-card">
+            <h2>Color Scheme</h2>
+            <div class="content-block">
+                <p>The color scheme uses dark tones similar to a photography darkroom, paired with a warm amber color
+                    for accents:</p>
+
+                <div class="color-palette">
+                    <div class="color-swatch swatch-primary">
+                        <div class="swatch-color"></div>
+                        <div class="swatch-info">
+                            <strong>Deep Navy Dark</strong>
+                            <code>#0f172a</code>
+                            <span>Used for the main page background and header.</span>
+                        </div>
+                    </div>
+
+                    <div class="color-swatch swatch-accent">
+                        <div class="swatch-color"></div>
+                        <div class="swatch-info">
+                            <strong>Golden Amber</strong>
+                            <code>#d97706</code>
+                            <span>Used for buttons, active links, and highlights.</span>
+                        </div>
+                    </div>
+
+                    <div class="color-swatch swatch-surface">
+                        <div class="swatch-color"></div>
+                        <div class="swatch-info">
+                            <strong>Slate Surface</strong>
+                            <code>#1e293b</code>
+                            <span>Used for card containers, modals, and boxes.</span>
+                        </div>
+                    </div>
+
+                    <div class="color-swatch swatch-text">
+                        <div class="swatch-color"></div>
+                        <div class="swatch-info">
+                            <strong>Off-White Text</strong>
+                            <code>#f8fafc</code>
+                            <span>Used for body text and headings for good contrast.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Typography -->
+        <section class="plan-card">
+            <h2>Typography</h2>
+            <div class="content-block">
+                <p>Two Google Fonts are used to keep the text clean and easy to read:</p>
+
+                <div class="typography-demo">
+                    <div class="font-sample">
+                        <h3>Heading Font: <em>Playfair Display</em></h3>
+                        <p class="sample-playfair">PhotoGallery: Capturing Life in Frame</p>
+                        <p class="font-usage"><strong>Where it is used:</strong> Used for main headings
+                            (<code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>) and section titles to give the site a
+                            classic photo album style.</p>
+                    </div>
+
+                    <div class="font-sample">
+                        <h3>Body Font: <em>Plus Jakarta Sans</em></h3>
+                        <p class="sample-jakarta">Filter photos, preview details, and save your favorite memory boards.
+                        </p>
+                        <p class="font-usage"><strong>Where it is used:</strong> Used for all paragraphs, navigation
+                            links, buttons, and form inputs so text is clear on screens of all sizes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 6: Wireframe -->
+        <section class="plan-card">
+            <h2>Wireframe Plan</h2>
+            <div class="content-block">
+                <p>These wireframe sketches show how the home page layout will adapt for small (mobile) and large
+                    (desktop) screens:</p>
+
+                <div class="wireframes-grid">
+                    <div class="wireframe-item">
+                        <h3>Small Screen (Mobile)</h3>
+                        <img src="images/wireframe-mobile.jpg"
+                            alt="Wireframe sketch for mobile showing sticky header, filter pills, stacked photo cards, and modal popup."
+                            class="wireframe-img">
+                    </div>
+
+                    <div class="wireframe-item">
+                        <h3>Large Screen (Desktop)</h3>
+                        <img src="images/wireframe-desktop.jpg"
+                            alt="Wireframe sketch for desktop showing header navigation bar, filter bar, 3-column photo grid, sidebar, and footer."
+                            class="wireframe-img">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Inefable KOUMBA | WDD 231 Individual Project Site Plan</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+</body>
+
+</html>

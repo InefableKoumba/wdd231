@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Learn about the inspiration behind PhotoGallery and share your visitor feedback via our interactive form.">
+    <meta name="author" content="Inefable KOUMBA">
+    
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="PhotoGallery - Story & Visitor Feedback">
+    <meta property="og:description" content="Discover the passion behind photo archiving and submit your feedback.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://inefablekoumba.github.io/wdd231/final/about.html">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80">
+
+    <title>PhotoGallery | Story & Visitor Feedback</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    
+    <!-- Fonts & CSS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+    
+    <!-- ES Module Script -->
+    <script type="module" src="scripts/feedback.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="brand-logo">
+                <div class="logo-icon">P</div>
+                <div class="brand-title">Photo<span>Gallery</span></div>
+            </a>
+            
+            <button id="menu-toggle" aria-label="Toggle navigation menu">☰</button>
+            
+            <nav>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Gallery Home</a></li>
+                    <li><a href="collections.html" class="nav-link">Favorites & Boards</a></li>
+                    <li><a href="about.html" class="nav-link active">Story & Feedback</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero-banner">
+            <h1>The Story Behind PhotoGallery</h1>
+            <p>I have always loved photography and capturing split seconds in time. Building a dedicated space to organize photos into themed memory boards makes it easier to revisit moments and share curated albums with family and friends.</p>
+        </section>
+
+        <!-- Form Container -->
+        <section class="form-container">
+            <h2 style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 10px; text-align: center;">Visitor Feedback Form</h2>
+            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 25px; text-align: center;">We'd love to hear your thoughts, suggestions, or favorite photography topics!</p>
+
+            <form id="feedback-form" action="thankyou.html" method="get" class="feedback-form">
+                <!-- Hidden Timestamp Field -->
+                <input type="hidden" id="form-timestamp" name="timestamp" value="">
+
+                <div class="form-group">
+                    <label for="fullname">Full Name <span style="color: var(--accent-amber);">*</span></label>
+                    <input type="text" id="fullname" name="fullname" required placeholder="Jane Doe" title="Please enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address <span style="color: var(--accent-amber);">*</span></label>
+                    <input type="email" id="email" name="email" required placeholder="janedoe@example.com" title="Please enter a valid email address">
+                </div>
+
+                <div class="form-group">
+                    <label for="favcategory">Favorite Photography Category <span style="color: var(--accent-amber);">*</span></label>
+                    <select id="favcategory" name="favcategory" required>
+                        <option value="" disabled selected>Select a category...</option>
+                        <option value="Nature">Nature & Landscapes</option>
+                        <option value="Urban">Urban & Street</option>
+                        <option value="Architecture">Architecture & Structures</option>
+                        <option value="Portraits">Portraits & People</option>
+                        <option value="Other">Other Photography Theme</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="rating">Website Experience Rating (1-5)</label>
+                    <input type="number" id="rating" name="rating" min="1" max="5" value="5">
+                </div>
+
+                <div class="form-group">
+                    <label for="comments">Comments & Feedback <span style="color: var(--accent-amber);">*</span></label>
+                    <textarea id="comments" name="comments" rows="5" required placeholder="Tell us what you liked or how we can improve..." title="Please leave a comment"></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Submit Feedback</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-links">
+            <a href="index.html">Home</a>
+            <a href="collections.html">Collections</a>
+            <a href="about.html">About & Feedback</a>
+            <a href="attributions.html">Attributions</a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> | Inefable KOUMBA | Republic of Congo</p>
+        <p><span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
