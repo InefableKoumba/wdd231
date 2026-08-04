@@ -4,18 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Application Received - Brazzaville Chamber of Commerce</title>
+    <title>Brazzaville Chamber of Commerce - Discover</title>
     <meta name="description"
-        content="Thank you for submitting your membership application to the Brazzaville Chamber of Commerce.">
+        content="Discover key landmarks, cultural hubs, economic features, and points of interest in Brazzaville.">
     <meta name="author" content="Inefable KOUMBA">
 
     <link rel="icon" href="images/favicon.png" type="image/png">
 
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://inefablekoumba.github.io/wdd231/chamber/thankyou.html">
-    <meta property="og:title" content="Application Received - Brazzaville Chamber of Commerce">
+    <meta property="og:url" content="https://inefablekoumba.github.io/wdd231/chamber/discover.html">
+    <meta property="og:title" content="Brazzaville Chamber of Commerce - Discover">
     <meta property="og:description"
-        content="Thank you for joining the Brazzaville Chamber of Commerce. We have received your application.">
+        content="Explore key attractions, economic landmarks, and cultural hubs in Brazzaville.">
     <meta property="og:image" content="https://inefablekoumba.github.io/wdd231/chamber/images/logo.png">
 
     <link rel="stylesheet" href="styles/normalize.css">
@@ -27,7 +27,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
 
     <script src="scripts/main.js" defer></script>
-    <script src="scripts/thankyou.js" defer></script>
+    <script type="module" src="scripts/discover.js"></script>
 </head>
 
 <body>
@@ -45,24 +45,27 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="directory.html">Directory</a></li>
                 <li><a href="join.html">Join</a></li>
-                <li><a href="discover.html">Discover</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
-        <div class="thankyou-wrapper">
-            <h1>Thank You for Applying!</h1>
-            <p class="thankyou-subtext">Your application has been received. A member of our team will contact you
-                shortly to complete the onboarding process.</p>
+    <main class="discover-main">
+        <h1>Discover Brazzaville</h1>
 
-            <div id="submission-results">
-            </div>
+        <div id="visit-message"></div>
 
-            <div class="return-home">
-                <a href="directory.html" class="btn-primary">&larr; Return to Member Directory</a>
-            </div>
-        </div>
+        <aside class="sidebar-info">
+            <h2>Brazzaville Overview</h2>
+            <p><strong>Population:</strong> ~2.4 Million</p>
+            <p><strong>Region:</strong> Republic of Congo</p>
+            <p><strong>Primary Industries:</strong> Trade, Transport, Energy, Services & Eco-Tourism</p>
+            <p>Welcome to Brazzaville—the vibrant capital on the banks of the majestic Congo River. Explore our top
+                points of interest below.</p>
+        </aside>
+
+        <section id="discover-gallery" class="discover-grid">
+        </section>
     </main>
 
     <footer>

@@ -100,6 +100,48 @@
   .spotlights-grid {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
+
+  /* ==========================================================================
+     Discover Page Layout (Medium Screens: 641px - 1024px & Large: 1025px+)
+     ========================================================================== */
+  .discover-main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Medium Screen Grid Template Areas (2-column layout) */
+  .discover-grid {
+    display: grid;
+    gap: 25px;
+    grid-template-areas:
+      "card1 card2"
+      "card3 card4"
+      "card5 card6"
+      "card7 card8";
+  }
+
+  /* Desktop Hover Effect on Gallery Images (not applied on small screens) */
+  .discover-card figure img {
+    transition: transform 0.4s ease, filter 0.4s ease, box-shadow 0.4s ease;
+  }
+
+  .discover-card figure img:hover {
+    transform: scale(1.06);
+    filter: brightness(1.1) contract(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
 }
+
+/* Large Screen Viewport (1025px and above) */
+@media (min-width: 1025px) {
+  /* Large Screen Grid Template Areas (Custom 3-column / asymmetric layout) */
+  .discover-grid {
+    grid-template-areas:
+      "card1 card2 card3"
+      "card4 card5 card5"
+      "card6 card7 card8";
+  }
+}
+
 
 

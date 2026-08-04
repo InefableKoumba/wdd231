@@ -814,4 +814,141 @@ dialog.membership-dialog li {
   text-decoration: none;
 }
 
+/* ==========================================================================
+   Discover Page Styles (Small Screen: 320px - 640px)
+   ========================================================================== */
+.visit-banner {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  padding: 12px 20px;
+  border-radius: 6px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.visit-banner p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+#close-banner-btn {
+  background: none;
+  border: none;
+  color: var(--text-light);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0 6px;
+}
+
+.sidebar-info {
+  background-color: var(--secondary-color);
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 18px;
+  margin-bottom: 25px;
+}
+
+.sidebar-info h2 {
+  margin-top: 0;
+  font-size: 1.2rem;
+  border-bottom: 2px solid var(--primary-color);
+  padding-bottom: 6px;
+}
+
+.sidebar-info p {
+  margin: 8px 0;
+  font-size: 0.9rem;
+}
+
+/* Grid Template Areas - Small Screen (Stacked Column) */
+.discover-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-areas:
+    "card1"
+    "card2"
+    "card3"
+    "card4"
+    "card5"
+    "card6"
+    "card7"
+    "card8";
+}
+
+.card-1 { grid-area: card1; }
+.card-2 { grid-area: card2; }
+.card-3 { grid-area: card3; }
+.card-4 { grid-area: card4; }
+.card-5 { grid-area: card5; }
+.card-6 { grid-area: card6; }
+.card-7 { grid-area: card7; }
+.card-8 { grid-area: card8; }
+
+.discover-card {
+  background-color: var(--secondary-color);
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+}
+
+.discover-card h2 {
+  font-size: 1.15rem;
+  margin: 0 0 12px 0;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 6px;
+}
+
+.discover-card figure {
+  margin: 0 0 12px 0;
+  overflow: hidden;
+  border-radius: 6px;
+}
+
+.discover-card figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.discover-card address {
+  font-style: normal;
+  font-size: 0.85rem;
+  color: var(--accent-color);
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.discover-card p {
+  margin: 0 0 15px 0;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  flex-grow: 1;
+}
+
+.learn-more-btn {
+  background-color: var(--primary-color);
+  color: var(--text-light);
+  border: none;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.2s;
+  align-self: start;
+}
+
+.learn-more-btn:hover {
+  background-color: var(--accent-color);
+}
+
+
 
