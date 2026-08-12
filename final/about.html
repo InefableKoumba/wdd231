@@ -13,7 +13,7 @@
     <meta property="og:description" content="Discover the passion behind photo archiving and submit your feedback.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://inefablekoumba.github.io/wdd231/final/about.html">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80">
+    <meta property="og:image" content="https://inefablekoumba.github.io/wdd231/final/images/og-image.jpg">
 
     <title>PhotoGallery | Story & Visitor Feedback</title>
     
@@ -25,6 +25,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
     
     <!-- ES Module Script -->
     <script type="module" src="scripts/feedback.js"></script>
@@ -60,25 +61,25 @@
 
         <!-- Form Container -->
         <section class="form-container">
-            <h2 style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 10px; text-align: center;">Visitor Feedback Form</h2>
-            <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 25px; text-align: center;">We'd love to hear your thoughts, suggestions, or favorite photography topics!</p>
+            <h2 class="form-heading">Visitor Feedback Form</h2>
+            <p class="form-subheading">We'd love to hear your thoughts, suggestions, or favorite photography topics!</p>
 
             <form id="feedback-form" action="thankyou.html" method="get" class="feedback-form">
                 <!-- Hidden Timestamp Field -->
                 <input type="hidden" id="form-timestamp" name="timestamp" value="">
 
                 <div class="form-group">
-                    <label for="fullname">Full Name <span style="color: var(--accent-amber);">*</span></label>
+                    <label for="fullname">Full Name <span class="required-star">*</span></label>
                     <input type="text" id="fullname" name="fullname" required placeholder="Jane Doe" title="Please enter your full name">
                 </div>
 
                 <div class="form-group">
-                    <label for="email">Email Address <span style="color: var(--accent-amber);">*</span></label>
+                    <label for="email">Email Address <span class="required-star">*</span></label>
                     <input type="email" id="email" name="email" required placeholder="janedoe@example.com" title="Please enter a valid email address">
                 </div>
 
                 <div class="form-group">
-                    <label for="favcategory">Favorite Photography Category <span style="color: var(--accent-amber);">*</span></label>
+                    <label for="favcategory">Favorite Photography Category <span class="required-star">*</span></label>
                     <select id="favcategory" name="favcategory" required>
                         <option value="" disabled selected>Select a category...</option>
                         <option value="Nature">Nature & Landscapes</option>
@@ -95,7 +96,7 @@
                 </div>
 
                 <div class="form-group">
-                    <label for="comments">Comments & Feedback <span style="color: var(--accent-amber);">*</span></label>
+                    <label for="comments">Comments & Feedback <span class="required-star">*</span></label>
                     <textarea id="comments" name="comments" rows="5" required placeholder="Tell us what you liked or how we can improve..." title="Please leave a comment"></textarea>
                 </div>
 

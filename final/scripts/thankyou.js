@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   if (!fullname && !email) {
     resultsContainer.innerHTML =
-      '<p class="error-state">No form data submitted. Please visit the <a href="about.html" style="color: var(--accent-amber);">Feedback Form</a> page.</p>';
+      '<p class="error-state">No form data submitted. Please visit the <a href="about.html" class="accent-link">Feedback Form</a> page.</p>';
     return;
   }
 
@@ -26,30 +26,30 @@ document.addEventListener("DOMContentLoaded", () => {
     : new Date().toLocaleString();
 
   resultsContainer.innerHTML = `
-        <dl class="results-list" style="display: grid; gap: 15px; background: var(--bg-primary); padding: 20px; border-radius: var(--radius-md); border: 1px solid var(--border-color);">
-            <div>
-                <dt style="color: var(--accent-amber); font-weight: 700;">Full Name:</dt>
-                <dd style="font-size: 1.1rem;">${escapeHtml(fullname)}</dd>
+        <dl class="results-list">
+            <div class="result-item">
+                <dt>Full Name:</dt>
+                <dd>${escapeHtml(fullname)}</dd>
             </div>
-            <div>
-                <dt style="color: var(--accent-amber); font-weight: 700;">Email Address:</dt>
-                <dd style="font-size: 1.1rem;">${escapeHtml(email)}</dd>
+            <div class="result-item">
+                <dt>Email Address:</dt>
+                <dd>${escapeHtml(email)}</dd>
             </div>
-            <div>
-                <dt style="color: var(--accent-amber); font-weight: 700;">Favorite Category:</dt>
-                <dd style="font-size: 1.1rem;">${escapeHtml(favcategory)}</dd>
+            <div class="result-item">
+                <dt>Favorite Category:</dt>
+                <dd>${escapeHtml(favcategory)}</dd>
             </div>
-            <div>
-                <dt style="color: var(--accent-amber); font-weight: 700;">Rating:</dt>
-                <dd style="font-size: 1.1rem;">${escapeHtml(rating)} / 5 ⭐</dd>
+            <div class="result-item">
+                <dt>Rating:</dt>
+                <dd>${escapeHtml(rating)} / 5 ⭐</dd>
             </div>
-            <div>
-                <dt style="color: var(--accent-amber); font-weight: 700;">Submitted Comments:</dt>
-                <dd style="font-size: 1.05rem; white-space: pre-line;">${escapeHtml(comments)}</dd>
+            <div class="result-item">
+                <dt>Submitted Comments:</dt>
+                <dd class="result-comment">${escapeHtml(comments)}</dd>
             </div>
-            <div>
-                <dt style="color: var(--accent-amber); font-weight: 700;">Submission Timestamp:</dt>
-                <dd style="font-size: 0.95rem; color: var(--text-muted);">${formattedDate}</dd>
+            <div class="result-item">
+                <dt>Submission Timestamp:</dt>
+                <dd class="result-timestamp">${formattedDate}</dd>
             </div>
         </dl>
     `;

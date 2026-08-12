@@ -1,0 +1,158 @@
+/* Reusable component utilities & extra styles */
+
+.status-counter {
+  margin-bottom: 20px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.modal-description {
+  color: var(--text-muted);
+  line-height: 1.5;
+}
+
+.collections-stats-bar {
+  margin-bottom: 30px;
+}
+
+.stats-container {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.stat-card {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--accent-amber);
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.form-heading {
+  font-family: var(--font-heading);
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form-subheading {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.required-star {
+  color: var(--accent-amber);
+}
+
+.accent-link {
+  color: var(--accent-amber);
+  text-decoration: none;
+}
+
+.accent-link:hover {
+  text-decoration: underline;
+}
+
+.attributions-container {
+  max-width: 800px;
+}
+
+.attributions-title {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  color: var(--accent-amber);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.attributions-content {
+  line-height: 1.8;
+  color: var(--text-main);
+}
+
+.attributions-section-heading {
+  color: var(--accent-amber);
+  margin-top: 20px;
+  margin-bottom: 8px;
+  font-size: 1.3rem;
+}
+
+.attributions-action {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.inline-btn {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.thankyou-container {
+  max-width: 700px;
+}
+
+.thankyou-header {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.celebration-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.thankyou-title {
+  font-family: var(--font-heading);
+  font-size: 2.2rem;
+  color: var(--accent-amber);
+}
+
+.thankyou-subheading {
+  color: var(--text-muted);
+}
+
+.thankyou-action {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.results-list {
+  display: grid;
+  gap: 15px;
+  background: var(--bg-primary);
+  padding: 20px;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--border-color);
+}
+
+.result-item dt {
+  color: var(--accent-amber);
+  font-weight: 700;
+}
+
+.result-item dd {
+  font-size: 1.1rem;
+}
+
+.result-comment {
+  font-size: 1.05rem;
+  white-space: pre-line;
+}
+
+.result-timestamp {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}

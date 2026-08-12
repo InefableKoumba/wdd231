@@ -8,6 +8,13 @@
         content="Confirmation page displaying details submitted through the PhotoGallery visitor feedback form.">
     <meta name="author" content="Inefable KOUMBA">
     
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="PhotoGallery - Feedback Received">
+    <meta property="og:description" content="Confirmation page displaying details submitted through the PhotoGallery visitor feedback form.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://inefablekoumba.github.io/wdd231/final/thankyou.html">
+    <meta property="og:image" content="https://inefablekoumba.github.io/wdd231/final/images/og-image.jpg">
+
     <title>PhotoGallery | Feedback Received</title>
     
     <!-- Favicon -->
@@ -18,6 +25,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
     
     <!-- ES Module Script -->
     <script type="module" src="scripts/thankyou.js"></script>
@@ -46,11 +54,11 @@
 
     <main>
 
-        <section class="form-container" style="max-width: 700px;">
-            <div style="text-align: center; margin-bottom: 25px;">
-                <div style="font-size: 3rem; margin-bottom: 10px;">🎉</div>
-                <h1 style="font-family: var(--font-heading); font-size: 2.2rem; color: var(--accent-amber);">Thank You for Your Feedback!</h1>
-                <p style="color: var(--text-muted);">Your submission has been processed. Here is a summary of your form entries:</p>
+        <section class="form-container thankyou-container">
+            <div class="thankyou-header">
+                <div class="celebration-icon">🎉</div>
+                <h1 class="thankyou-title">Thank You for Your Feedback!</h1>
+                <p class="thankyou-subheading">Your submission has been processed. Here is a summary of your form entries:</p>
             </div>
 
             <!-- Display Form Data -->
@@ -58,8 +66,8 @@
                 <!-- Dynamically populated via thankyou.js -->
             </div>
 
-            <div style="text-align: center; margin-top: 30px;">
-                <a href="index.html" class="submit-btn" style="text-decoration: none; display: inline-block;">Return to Photo Gallery</a>
+            <div class="thankyou-action">
+                <a href="index.html" class="submit-btn inline-btn">Return to Photo Gallery</a>
             </div>
         </section>
 

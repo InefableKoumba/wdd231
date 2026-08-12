@@ -8,6 +8,13 @@
         content="Resource attributions and source citations for photography, fonts, and assets used in PhotoGallery.">
     <meta name="author" content="Inefable KOUMBA">
     
+    <!-- Open Graph Metadata -->
+    <meta property="og:title" content="PhotoGallery - Resource Attributions & Citations">
+    <meta property="og:description" content="Resource attributions and source citations for photography, fonts, and assets used in PhotoGallery.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://inefablekoumba.github.io/wdd231/final/attributions.html">
+    <meta property="og:image" content="https://inefablekoumba.github.io/wdd231/final/images/og-image.jpg">
+
     <title>PhotoGallery | Resource Attributions</title>
     
     <!-- Favicon -->
@@ -18,6 +25,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
     
     <script type="module" src="scripts/main.js"></script>
 </head>
@@ -45,12 +53,12 @@
 
     <main>
 
-        <section class="form-container" style="max-width: 800px;">
-            <h1 style="font-family: var(--font-heading); font-size: 2.2rem; color: var(--accent-amber); margin-bottom: 20px; text-align: center;">Resource Attributions & Citations</h1>
+        <section class="form-container attributions-container">
+            <h1 class="attributions-title">Resource Attributions & Citations</h1>
             
-            <div style="line-height: 1.8; color: var(--text-main);">
-                <h3 style="color: var(--accent-amber); margin-top: 15px;">Imagery Sources</h3>
-                <p>All high-resolution photography assets featured across the gallery, preview modals, and thumbnail cards are sourced from <a href="https://unsplash.com" target="_blank" rel="noopener" style="color: var(--accent-amber);">Unsplash</a> under the Unsplash License (free to use for commercial and non-commercial purposes).</p>
+            <div class="attributions-content">
+                <h2 class="attributions-section-heading">Imagery Sources</h2>
+                <p>All high-resolution photography assets featured across the gallery, preview modals, and thumbnail cards are sourced from <a href="https://unsplash.com" target="_blank" rel="noopener" class="accent-link">Unsplash</a> under the Unsplash License (free to use for commercial and non-commercial purposes).</p>
                 <ul>
                     <li>Nature & Mountain Photography by Lucas Clara, Chloe Bennett, and Sarah Jenkins.</li>
                     <li>Urban & Street Photography by Kenji Sato, Mateo Rossi, and Liam O'Connor.</li>
@@ -58,14 +66,14 @@
                     <li>Portrait Photography by Amara Diallo, Carlos Mendoza, and Nisha Patel.</li>
                 </ul>
 
-                <h3 style="color: var(--accent-amber); margin-top: 25px;">Web Fonts</h3>
-                <p>Typography provided by <a href="https://fonts.google.com" target="_blank" rel="noopener" style="color: var(--accent-amber);">Google Fonts</a>:</p>
+                <h2 class="attributions-section-heading">Web Fonts</h2>
+                <p>Typography provided by <a href="https://fonts.google.com" target="_blank" rel="noopener" class="accent-link">Google Fonts</a>:</p>
                 <ul>
                     <li><strong>Playfair Display</strong> - Designed by Claus Eggers Sørensen (SIL Open Font License).</li>
                     <li><strong>Plus Jakarta Sans</strong> - Designed by Tokotype (SIL Open Font License).</li>
                 </ul>
 
-                <h3 style="color: var(--accent-amber); margin-top: 25px;">Technical Libraries & APIs</h3>
+                <h2 class="attributions-section-heading">Technical Libraries & APIs</h2>
                 <ul>
                     <li>Vanilla JavaScript ES Modules & Native Web <code>fetch()</code> API.</li>
                     <li>Browser Native <code>localStorage</code> Key-Value Store.</li>
@@ -73,8 +81,8 @@
                 </ul>
             </div>
 
-            <div style="text-align: center; margin-top: 30px;">
-                <a href="index.html" class="submit-btn" style="text-decoration: none; display: inline-block;">Return to Gallery</a>
+            <div class="attributions-action">
+                <a href="index.html" class="submit-btn inline-btn">Return to Gallery</a>
             </div>
         </section>
 

@@ -13,7 +13,7 @@
     <meta property="og:description" content="Discover, filter, and organize stunning photographic memory boards with custom category filters and previews.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://inefablekoumba.github.io/wdd231/final/index.html">
-    <meta property="og:image" content="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=800&q=80">
+    <meta property="og:image" content="https://inefablekoumba.github.io/wdd231/final/images/og-image.jpg">
 
     <title>PhotoGallery | Home & Portfolio</title>
     
@@ -25,6 +25,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/components.css">
     
     <!-- ES Module Script -->
     <script type="module" src="scripts/home.js"></script>
@@ -75,7 +76,7 @@
         </section>
 
         <!-- Gallery Status Counter -->
-        <div style="margin-bottom: 20px; color: var(--text-muted); font-size: 0.9rem;">
+        <div class="status-counter">
             <span id="photo-count">Loading gallery photos...</span>
         </div>
 
@@ -87,11 +88,11 @@
         <!-- Accessible HTML Modal Dialog -->
         <dialog id="photo-modal" class="photo-modal" aria-labelledby="modal-title">
             <div class="modal-header">
-                <h3 id="modal-title">Photo Details</h3>
+                <h2 id="modal-title">Photo Details</h2>
                 <button id="modal-close-btn" class="modal-close-btn" aria-label="Close dialog">✕</button>
             </div>
             <div class="modal-body">
-                <img id="modal-img" src="" alt="" class="modal-img">
+                <img id="modal-img" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3C/svg%3E" alt="Photo Preview" class="modal-img">
                 <dl class="modal-details-grid">
                     <div class="detail-item">
                         <dt>Category</dt>
@@ -114,7 +115,7 @@
                         <dd id="modal-camera">-</dd>
                     </div>
                 </dl>
-                <p id="modal-description" style="color: var(--text-muted); line-height: 1.5;"></p>
+                <p id="modal-description" class="modal-description"></p>
             </div>
         </dialog>
 
